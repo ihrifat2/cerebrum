@@ -103,6 +103,31 @@
         </div>
     </section>
 
+    <!-- <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">asdasdasd</a> -->
+
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 mx-auto">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2 class="text-uppercase">Notice</h2>
+                                <p>You are not eligible for this test</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -124,9 +149,16 @@
 if (isset($_POST['formSubmit'])) {
     $age        = $_POST['ageinput'];
     $gender     = $_POST['radios'];
-
-    echo $age . " : " . $gender;
-    echo "<script>javascript:document.location='checkup/'</script>";
+    
+    if ($age < 13) {
+        echo "<script>
+        $(window).on('load',function(){
+            $('#portfolioModal1').modal('show');
+        });
+        </script>";
+    } else{
+        echo "<script>javascript:document.location='checkup/'</script>";
+    }
 }
 
 ?>
