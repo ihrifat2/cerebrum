@@ -145,6 +145,8 @@
 </body>
 </html>
 <?php
+session_start();
+unset($_SESSION['result']);
 
 if (isset($_POST['formSubmit'])) {
     $age        = $_POST['ageinput'];
