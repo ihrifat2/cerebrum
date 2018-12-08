@@ -75,7 +75,7 @@
                             <div class="form-group row">
                                 <label class="col-md-3 control-label" for="ageinput">Age</label>  
                                 <div class="col-md-9">
-                                    <input id="ageinput" name="ageinput" type="number" class="form-control input-md" required="">
+                                    <input id="ageinput" name="ageinput" type="number" class="form-control input-md" placeholder="Your Age" required="">
                                 </div>
                             </div>
 
@@ -83,14 +83,11 @@
                             <div class="form-group row">
                                 <label class="col-md-3 control-label" for="radios">Gender</label>
                                 <div class="col-md-9"> 
-                                    <label class="radio-inline" for="radios-0">
-                                        <input type="radio" name="radios" id="radios-0" value="Male" checked="checked" required="">
-                                      Male
-                                    </label> 
-                                    <label class="radio-inline" for="radios-1">
-                                        <input type="radio" name="radios" id="radios-1" value="Female" required="">
-                                      Female
-                                    </label>
+                                    <select class="form-control" id="Gender" name="gender" placeholder="Search Type" required>
+                                        <option>Select Gender</option>
+                                        <option value="1">Male</option>
+                                        <option value="2">Female</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="float-right form-group row">
@@ -102,8 +99,6 @@
             </div>
         </div>
     </section>
-
-    <!-- <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">asdasdasd</a> -->
 
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -149,10 +144,20 @@
 error_reporting(0);
 session_start();
 unset($_SESSION['result']);
+unset($_SESSION['age']);
 
 if (isset($_POST['formSubmit'])) {
     $age        = $_POST['ageinput'];
-    $gender     = $_POST['radios'];
+    $_SESSION['age'] = $age;
+    $gender     = $_POST['gender'];
+
+    if ($gender == 1) {
+        $gender = "male";
+    } elseif ($gender == 2) {
+        $gender = "female";
+    } else{
+        echo "<script>javascript:document.location='index.php'</script>";
+    }
     
     if ($age < 13) {
         echo "<script>

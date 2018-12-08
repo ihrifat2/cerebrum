@@ -3,6 +3,10 @@
 session_start();
 error_reporting(0);
 
+$ansQues = $_COOKIE['CountTotalAnsweredQuestion'];
+
+$age = $_SESSION['age'];
+
 $result = $_SESSION['result'];
 
 $result1 = $result / 200;
@@ -83,11 +87,14 @@ if ($result2 <= 0 && $result2 >= 20) {
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Check-up Result</h4>
+                        <h4 class="my-0 font-weight-normal">Check-up Result (age <?php echo $age; ?>)</h4>
                     </div>
                     <div class="card-body">
                         <h1 class="card-title pricing-card-title"><?php echo $result2; ?>%</h1>
                         <ul class="list-unstyled mt-3 mb-4">
+                            <li class="text-justify">
+                                <h5>You have answered <?php echo $ansQues; ?> question</h5>
+                            </li>
                             <li class="text-justify">
                                 <h5><?php echo $message; ?></h5>
                             </li>

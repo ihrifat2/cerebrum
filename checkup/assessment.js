@@ -1,3 +1,5 @@
+// Check questions are answered by thr user or not in every steps
+
 check0();
 check1();
 check2();
@@ -7,6 +9,10 @@ check5();
 check6();
 check7();
 check8();
+
+// Count answered questions
+
+var count = 0; 
 
 /*  STEP 1  */
 
@@ -22,6 +28,11 @@ $(document).ready(function(){
     $('.assessment0').on('click',function(){
         var data = $(".assessment0:checked").val();
         q1 = 1;
+
+        if (q1 == 1  && count == 0) {
+            count++;
+        }
+        console.log(count);
 
         check0();
             
@@ -43,6 +54,11 @@ $(document).ready(function(){
         var data = $(".assessment1:checked").val();
         q2 = 1;
 
+        if (q2 == 1  && count == 1) {
+            count++;
+        }
+        console.log(count);
+
         check0();
         
         $.ajax({
@@ -63,6 +79,11 @@ $(document).ready(function(){
         var data = $(".assessment2:checked").val();
         q3 = 1;
 
+        if (q3 == 1  && count == 2) {
+            count++;
+        }
+        console.log(count);
+
         check0();
         
         $.ajax({
@@ -82,6 +103,11 @@ $(document).ready(function(){
     $('.assessment3').on('click',function(){
         var data = $(".assessment3:checked").val();
         q4 = 1;
+
+        if (q4 == 1  && count == 3) {
+            count++;
+        }
+        console.log(count);
 
         check0();
         
@@ -120,6 +146,11 @@ $(document).ready(function(){
         var data = $(".assessment4:checked").val();
         q5 = 1;
 
+        if (q5 == 1  && count == 4) {
+            count++;
+        }
+        console.log(count);
+
         check1();
         
         $.ajax({
@@ -141,6 +172,11 @@ $(document).ready(function(){
         var data = $(".assessment5:checked").val();
         q6 = 1;
 
+        if (q6 == 1  && count == 5) {
+            count++;
+        }
+        console.log(count);
+
         check1();
             
         $.ajax({
@@ -161,6 +197,11 @@ $(document).ready(function(){
         var data = $(".assessment6:checked").val();
         q7 = 1;
 
+        if (q7 == 1  && count == 6) {
+            count++;
+        }
+        console.log(count);
+
         check1();
         
         $.ajax({
@@ -180,6 +221,11 @@ $(document).ready(function(){
     $('.assessment7').on('click',function(){
         var data = $(".assessment7:checked").val();
         q8 = 1;
+
+        if (q8 == 1  && count == 7) {
+            count++;
+        }
+        console.log(count);
 
         check1();
         
@@ -217,6 +263,11 @@ $(document).ready(function(){
         var data = $(".assessment8:checked").val();
         q9 = 1;
 
+        if (q9 == 1  && count == 8) {
+            count++;
+        }
+        console.log(count);
+
         check2();
         
         $.ajax({
@@ -238,6 +289,11 @@ $(document).ready(function(){
         var data = $(".assessment9:checked").val();
         q10 = 1;
 
+        if (q10 == 1  && count == 9) {
+            count++;
+        }
+        console.log(count);
+
         check2();
             
         $.ajax({
@@ -257,6 +313,11 @@ $(document).ready(function(){
     $('.assessment10').on('click',function(){
         var data = $(".assessment10:checked").val();
         q11 = 1;
+
+        if (q11 == 1  && count == 10) {
+            count++;
+        }
+        console.log(count);
 
         check2();
         
@@ -278,6 +339,11 @@ $(document).ready(function(){
         var data = $(".assessment11:checked").val();
         q12 = 1;
 
+        if (q12 == 1  && count == 11) {
+            count++;
+        }
+        console.log(count);
+
         check2();
         
         $.ajax({
@@ -297,6 +363,11 @@ $(document).ready(function(){
     $('.assessment12').on('click',function(){
         var data = $(".assessment12:checked").val();
         q13 = 1;
+
+        if (q13 == 1  && count == 12) {
+            count++;
+        }
+        console.log(count);
 
         check2();
         
@@ -335,6 +406,11 @@ $(document).ready(function(){
         var data = $(".assessment13:checked").val();
         q14 = 1;
 
+        if (q14 == 1  && count == 13) {
+            count++;
+        }
+        console.log(count);
+
         check3();
         
         $.ajax({
@@ -356,6 +432,11 @@ $(document).ready(function(){
         var data = $(".assessment14:checked").val();
         q15 = 1;
 
+        if (q15 == 1  && count == 14) {
+            count++;
+        }
+        console.log(count);
+
         check3();
             
         $.ajax({
@@ -375,6 +456,11 @@ $(document).ready(function(){
     $('.assessment15').on('click',function(){
         var data = $(".assessment15:checked").val();
         q16 = 1;
+
+        if (q16 == 1  && count == 15) {
+            count++;
+        }
+        console.log(count);
 
         check3();
         
@@ -396,6 +482,11 @@ $(document).ready(function(){
         var data = $(".assessment16:checked").val();
         q17 = 1;
 
+        if (q17 == 1  && count == 16) {
+            count++;
+        }
+        console.log(count);
+
         check3();
         
         $.ajax({
@@ -416,6 +507,11 @@ $(document).ready(function(){
         var data = $(".assessment17:checked").val();
         q18 = 1;
 
+        if (q18 == 1  && count == 17) {
+            count++;
+        }
+        console.log(count);
+
         check3();
         
         $.ajax({
@@ -435,6 +531,11 @@ $(document).ready(function(){
     $('.assessment18').on('click',function(){
         var data = $(".assessment18:checked").val();
         q19 = 1;
+
+        if (q19 == 1  && count == 18) {
+            count++;
+        }
+        console.log(count);
 
         check3();
         
@@ -477,6 +578,11 @@ $(document).ready(function(){
         var data = $(".assessment19:checked").val();
         q20 = 1;
 
+        if (q20 == 1  && count == 19) {
+            count++;
+        }
+        console.log(count);
+
         check4();
         
         $.ajax({
@@ -496,6 +602,11 @@ $(document).ready(function(){
     $('.assessment20').on('click',function(){
         var data = $(".assessment20:checked").val();
         q21 = 1;
+
+        if (q21 == 1  && count == 20) {
+            count++;
+        }
+        console.log(count);
 
         check4();
         
@@ -517,6 +628,11 @@ $(document).ready(function(){
         var data = $(".assessment21:checked").val();
         q22 = 1;
 
+        if (q22 == 1  && count == 21) {
+            count++;
+        }
+        console.log(count);
+
         check4();
         
         $.ajax({
@@ -536,6 +652,11 @@ $(document).ready(function(){
     $('.assessment22').on('click',function(){
         var data = $(".assessment22:checked").val();
         q23 = 1;
+
+        if (q23 == 1 && count == 22) {
+            count++;
+        }
+        console.log(count);
 
         check4();
         
@@ -557,6 +678,11 @@ $(document).ready(function(){
         var data = $(".assessment23:checked").val();
         q24 = 1;
 
+        if (q24 == 1 && count == 23) {
+            count++;
+        }
+        console.log(count);
+
         check4();
         
         $.ajax({
@@ -576,6 +702,11 @@ $(document).ready(function(){
     $('.assessment24').on('click',function(){
         var data = $(".assessment24:checked").val();
         q25 = 1;
+
+        if (q25 == 1 && count == 24) {
+            count++;
+        }
+        console.log(count);
 
         check4();
         
@@ -597,6 +728,11 @@ $(document).ready(function(){
         var data = $(".assessment25:checked").val();
         q26 = 1;
 
+        if (q26 == 1 && count == 25) {
+            count++;
+        }
+        console.log(count);
+
         check4();
         
         $.ajax({
@@ -616,6 +752,11 @@ $(document).ready(function(){
     $('.assessment26').on('click',function(){
         var data = $(".assessment26:checked").val();
         q27 = 1;
+
+        if (q27 == 1 && count == 26) {
+            count++;
+        }
+        console.log(count);
 
         check4();
         
@@ -637,6 +778,11 @@ $(document).ready(function(){
         var data = $(".assessment27:checked").val();
         q28 = 1;
 
+        if (q28 == 1 && count == 27) {
+            count++;
+        }
+        console.log(count);
+
         check4();
         
         $.ajax({
@@ -656,6 +802,11 @@ $(document).ready(function(){
     $('.assessment28').on('click',function(){
         var data = $(".assessment28:checked").val();
         q29 = 1;
+
+        if (q29 == 1 && count == 28) {
+            count++;
+        }
+        console.log(count);
 
         check4();
         
@@ -696,6 +847,11 @@ $(document).ready(function(){
         var data = $(".assessment29:checked").val();
         q30 = 1;
 
+        if (q30 == 1  && count == 29) {
+            count++;
+        }
+        console.log(count);
+
         check5();
         
         $.ajax({
@@ -715,6 +871,11 @@ $(document).ready(function(){
     $('.assessment30').on('click',function(){
         var data = $(".assessment30:checked").val();
         q31 = 1;
+
+        if (q31 == 1  && count == 30) {
+            count++;
+        }
+        console.log(count);
 
         check5();
         
@@ -736,6 +897,11 @@ $(document).ready(function(){
         var data = $(".assessment31:checked").val();
         q32 = 1;
 
+        if (q32 == 1  && count == 31) {
+            count++;
+        }
+        console.log(count);
+
         check5();
         
         $.ajax({
@@ -755,6 +921,11 @@ $(document).ready(function(){
     $('.assessment32').on('click',function(){
         var data = $(".assessment32:checked").val();
         q33 = 1;
+
+        if (q33 == 1  && count == 32) {
+            count++;
+        }
+        console.log(count);
 
         check5();
         
@@ -776,6 +947,11 @@ $(document).ready(function(){
         var data = $(".assessment33:checked").val();
         q34 = 1;
 
+        if (q34 == 1  && count == 33) {
+            count++;
+        }
+        console.log(count);
+
         check5();
         
         $.ajax({
@@ -795,6 +971,11 @@ $(document).ready(function(){
     $('.assessment34').on('click',function(){
         var data = $(".assessment34:checked").val();
         q35 = 1;
+
+        if (q35 == 1  && count == 34) {
+            count++;
+        }
+        console.log(count);
 
         check5();
         
@@ -816,6 +997,11 @@ $(document).ready(function(){
         var data = $(".assessment35:checked").val();
         q36 = 1;
 
+        if (q36 == 1  && count == 35) {
+            count++;
+        }
+        console.log(count);
+
         check5();
         
         $.ajax({
@@ -835,6 +1021,11 @@ $(document).ready(function(){
     $('.assessment36').on('click',function(){
         var data = $(".assessment36:checked").val();
         q37 = 1;
+
+        if (q37 == 1  && count == 36) {
+            count++;
+        }
+        console.log(count);
 
         check5();
         
@@ -871,6 +1062,11 @@ $(document).ready(function(){
         var data = $(".assessment37:checked").val();
         q38 = 1;
 
+        if (q38 == 1  && count == 37) {
+            count++;
+        }
+        console.log(count);
+
         check6();
         
         $.ajax({
@@ -890,6 +1086,11 @@ $(document).ready(function(){
     $('.assessment38').on('click',function(){
         var data = $(".assessment38:checked").val();
         q39 = 1;
+
+        if (q39 == 1  && count == 38) {
+            count++;
+        }
+        console.log(count);
 
         check6();
         
@@ -911,6 +1112,11 @@ $(document).ready(function(){
         var data = $(".assessment39:checked").val();
         q40 = 1;
 
+        if (q40 == 1  && count == 39) {
+            count++;
+        }
+        console.log(count);
+
         check6();
         
         $.ajax({
@@ -930,6 +1136,11 @@ $(document).ready(function(){
     $('.assessment40').on('click',function(){
         var data = $(".assessment40:checked").val();
         q41 = 1;
+
+        if (q41 == 1  && count == 40) {
+            count++;
+        }
+        console.log(count);
 
         check6();
         
@@ -966,6 +1177,11 @@ $(document).ready(function(){
         var data = $(".assessment41:checked").val();
         q42 = 1;
 
+        if (q42 == 1  && count == 41) {
+            count++;
+        }
+        console.log(count);
+
         check7();
         
         $.ajax({
@@ -985,6 +1201,11 @@ $(document).ready(function(){
     $('.assessment42').on('click',function(){
         var data = $(".assessment42:checked").val();
         q43 = 1;
+
+        if (q43 == 1  && count == 42) {
+            count++;
+        }
+        console.log(count);
 
         check7();
         
@@ -1006,6 +1227,11 @@ $(document).ready(function(){
         var data = $(".assessment43:checked").val();
         q44 = 1;
 
+        if (q44 == 1  && count == 43) {
+            count++;
+        }
+        console.log(count);
+
         check7();
         
         $.ajax({
@@ -1025,6 +1251,11 @@ $(document).ready(function(){
     $('.assessment44').on('click',function(){
         var data = $(".assessment44:checked").val();
         q45 = 1;
+
+        if (q45 == 1  && count == 44) {
+            count++;
+        }
+        console.log(count);
 
         check7();
         
@@ -1065,6 +1296,11 @@ $(document).ready(function(){
         var data = $(".assessment45:checked").val();
         q46 = 1;
 
+        if (q46 == 1  && count == 45) {
+            count++;
+        }
+        console.log(count);
+
         check8();
         
         $.ajax({
@@ -1084,6 +1320,11 @@ $(document).ready(function(){
     $('.assessment46').on('click',function(){
         var data = $(".assessment46:checked").val();
         q47 = 1;
+
+        if (q47 == 1  && count == 46) {
+            count++;
+        }
+        console.log(count);
 
         check8();
         
@@ -1105,6 +1346,11 @@ $(document).ready(function(){
         var data = $(".assessment47:checked").val();
         q48 = 1;
 
+        if (q48 == 1  && count == 47) {
+            count++;
+        }
+        console.log(count);
+
         check8();
         
         $.ajax({
@@ -1124,6 +1370,11 @@ $(document).ready(function(){
     $('.assessment48').on('click',function(){
         var data = $(".assessment48:checked").val();
         q49 = 1;
+
+        if (q49 == 1  && count == 48) {
+            count++;
+        }
+        console.log(count);
 
         check8();
         
@@ -1146,6 +1397,11 @@ $(document).ready(function(){
         var data = $(".assessment49:checked").val();
         q50 = 1;
 
+        if (q50 == 1  && count == 49) {
+            count++;
+        }
+        console.log(count);
+
         check8();
         
         $.ajax({
@@ -1165,6 +1421,11 @@ $(document).ready(function(){
     $('.assessment50').on('click',function(){
         var data = $(".assessment50:checked").val();
         q51 = 1;
+
+        if (q51 == 1  && count == 50) {
+            count++;
+        }
+        console.log(count);
 
         check8();
         
@@ -1186,6 +1447,11 @@ $(document).ready(function(){
         var data = $(".assessment51:checked").val();
         q52 = 1;
 
+        if (q52 == 1  && count == 51) {
+            count++;
+        }
+        console.log(count);
+
         check8();
         
         $.ajax({
@@ -1205,6 +1471,14 @@ $(document).ready(function(){
     $('.assessment52').on('click',function(){
         var data = $(".assessment52:checked").val();
         q53 = 1;
+
+        if (q53 == 1  && count == 52) {
+            count++;
+            //count = 53;
+        }
+        console.log(count);
+
+        document.cookie = "CountTotalAnsweredQuestion="+count;
 
         check8();
         
