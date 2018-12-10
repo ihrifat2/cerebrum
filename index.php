@@ -40,6 +40,9 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="psychologict.html">Psychologist's Information</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#check_up">check up</a>
                     </li>
                 </ul>
